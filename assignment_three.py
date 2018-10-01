@@ -38,7 +38,7 @@ def total_surface_area(length, width, height):
 
 
 def main():
-    print(total_surface_area(get_length(), get_width(), get_height()))
+    print("The total surface area is:", total_surface_area(get_length(), get_width(), get_height()))
 # This function works for the calculation.
 
 

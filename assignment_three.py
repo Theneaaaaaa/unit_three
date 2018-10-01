@@ -13,8 +13,16 @@ def area_of_rectangle(length, width):
     return area
 
 
+def total_surface_area(length, width, height):
+    front_back = area_of_rectangle(length, width) * 2
+    sides = area_of_rectangle(width, height) * 2
+    top_bottom = area_of_rectangle(length, height) * 2
+    return front_back + sides + top_bottom
+# Almost forget to put parameters in there.
+
+
 def main():
-    print(area_of_rectangle(2, 5))
+    print(total_surface_area(2, 5, 7))
 # This function works for the calculation.
 
 

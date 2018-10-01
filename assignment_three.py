@@ -8,6 +8,22 @@ def print_instruction():
     print("Please input the length, width and height of the solid.")
 
 
+def get_length():
+    length = input("Please enter length:")
+    return float(length)
+
+
+def get_width():
+    width = input("Please enter width:")
+    return float(width)
+
+
+def get_height():
+    height = input("Please enter height:")
+    return float(height)
+# Don't forget to make all of these strings float
+
+
 def area_of_rectangle(length, width):
     area = length * width
     return area
@@ -22,7 +38,7 @@ def total_surface_area(length, width, height):
 
 
 def main():
-    print(total_surface_area(2, 5, 7))
+    print(total_surface_area(get_length(), get_width(), get_height()))
 # This function works for the calculation.
 
 
